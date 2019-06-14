@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page Title</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script>
+
+        //logically similar to main function.
+        $(function(){
+        //$("li").css("list-style-type","none");
+
+            $("button").click(function(){
+                var para=$("<p/>")
+                .text("4500 Rs.")
+                .attr("style","color:red");
+                $(".product").find("p").remove();
+                $(".product").append(para);
+
+
+            })
+    })
+    </script>
+</head>
+<body>
+    <ul>
+       <li class ="product" style="list-style-type:none">
+            <h2>Nokia 6000</h2>
+            <button>GET PRICE</button>
+        </li>
+    </ul>
+</body>
+</html>

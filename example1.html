@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page Title</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script>
+
+        //logically similar to main function.
+        $(function(){
+            //understanding DOM Traversal
+    
+          //  Css style selectors
+         //For the first List Item 
+         $("#products li:first, li:odd,#products >> li,#products>li").css("color","red");
+         //For odd list items
+        
+         //for the immediate child
+        
+         //for the grand child
+         
+    })
+    </script>
+</head>
+<body>
+    <ul id="products">
+        <li>Laptop</li>
+        <li>Mobile</li>
+        <ul>
+            <li>Sony</li>
+            <li>Apple</li>
+        </ul>
+        <li>Headphones</li>
+    </ul>
+    <ul id="services">
+            <li>Email</li>
+            <li>Chat</li>
+            <li>SMS</li>
+    </ul>
+</body>
+</html>

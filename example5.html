@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page Title</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script>
+
+        //logically similar to main function.
+        $(function(){
+        //$("li").css("list-style-type","none");
+
+            $("button").click(function(){
+                var para=$("<p/>")
+                .text(attr())
+                .attr("style","color:red");
+                $(this).closest(".product").find("p").remove();
+                $(this).after(para);
+
+
+            })
+         $("li").css("display","inline-block");
+         $("li").css("padding","10px");
+        $("li").css("list-styletype","none");
+    })
+    </script>
+</head>
+<body>
+    <li style="display: inline-block;">
+       <li class ="product">
+            <h2>Nokia 6000</h2>
+            <button>GET PRICE</button>
+        </li>
+        <li data-price="50000" class ="product">
+            <h2>iPhone X</h2>
+            <button>GET PRICE</button>
+        </li>
+        <li data-price="45000" class ="product">
+            <h2>Samsung S10</h2>
+            <button>GET PRICE</button>
+        </li>
+        <li data-price="35000" class ="product">
+            <h2>Oneplus 7pro</h2>
+            <button>GET PRICE</button>
+        </li>
+        <li data-price="52000" class ="product">
+            <h2>Google Pixel 3</h2>
+            <button>GET PRICE</button>
+        </li>
+        <li data-price="25000" class ="product">
+            <h2>Poco F1</h2>
+            <button>GET PRICE</button>
+        </li>
+    </ul>
+</body>
+</html>
